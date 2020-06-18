@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void init() {
         tv_back = (TextView) findViewById(R.id.tv_back);
         tv_main_title = (TextView) findViewById(R.id.tv_main_title);
-        tv_main_title.setText("博学谷课程");
+        tv_main_title.setText("Python教程");
         rl_title_bar = (RelativeLayout) findViewById(R.id.title_bar);
         rl_title_bar.setBackgroundColor(Color.parseColor("#30B4FF"));
         tv_back.setVisibility(View.GONE);
@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 iv_course.setImageResource(R.drawable.main_course_icon_selected);
                 tv_course.setTextColor(Color.parseColor("#0097F7"));
                 rl_title_bar.setVisibility(View.VISIBLE);
-                tv_main_title.setText("博学谷课程");
+                tv_main_title.setText("Python教程");
                 break;
             case 1:
                 mExercisesBtn.setSelected(true);
@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .setImageResource(R.drawable.main_exercises_icon_selected);
                 tv_exercises.setTextColor(Color.parseColor("#0097F7"));
                 rl_title_bar.setVisibility(View.VISIBLE);
-                tv_main_title.setText("博学谷习题");
+                tv_main_title.setText("习题");
                 break;
             case 2:
                 mMyInfoBtn.setSelected(true);
@@ -250,7 +250,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (keyCode == KeyEvent.KEYCODE_BACK
                 && event.getAction() == KeyEvent.ACTION_DOWN) {
             if ((System.currentTimeMillis() - exitTime) > 2000) {
-                Toast.makeText(MainActivity.this, "再按一次退出博学谷",
+                Toast.makeText(MainActivity.this, "再按一次退出应用",
                         Toast.LENGTH_SHORT).show();
                 exitTime = System.currentTimeMillis();
             } else {

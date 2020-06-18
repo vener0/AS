@@ -14,12 +14,13 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="8dp"
             android:src="@drawable/course_intro_icon" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_marginLeft="5dp"
             android:gravity="center_vertical"
-            android:text="Android 基础教程1-10章视频"
+            android:text="Python基础教程"
             android:textColor="@android:color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
